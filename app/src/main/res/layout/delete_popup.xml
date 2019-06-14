@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/RGroup"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/txtnomb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="129dp"
+            android:gravity="center"
+            android:text="¿Estas Seguro ..."
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="141dp"
+            android:layout_height="104dp"
+            android:layout_above="@+id/txtnomb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-129dp"
+            app:srcCompat="@drawable/ic_warning" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="174dp"
+            android:text="Que desses dar de baja su cuenta?" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="170dp">
+
+            <ImageView
+                android:id="@+id/imgView_pass"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimary"
+                android:padding="8dp"
+                android:src="@drawable/ic_key"
+                android:tint="@color/white" />
+
+
+            <EditText
+                android:id="@+id/etpasswordDelete"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgView_pass"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imgView_pass"
+                android:background="@color/editTextBG"
+                android:hint="Confirme su Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="435dp"
+            android:layout_below="@+id/relativeLayout9"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/bt_delete"
+                android:layout_width="101dp"
+                android:layout_height="36dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/butCancelar"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/btn_bg2"
+                android:ems="10"
+                android:text="Dar de baja"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/butCancelar"
+                android:layout_width="97dp"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="69dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btn_bg2"
+                android:ems="10"
+                android:text="Cancelar"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

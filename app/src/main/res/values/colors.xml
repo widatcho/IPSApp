@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#860e1e</color>
+    <color name="colorPrimaryDark">#860e1e</color>
+    <color name="colorAccent">#860e1e</color>
+    <color name="editTextBG">#DADADA</color>
+    <color name="white">#ece4e3e3</color>
+    <color name="transparent">#00000000</color>
+    <color name="gris">#aaa</color>
+</resources>

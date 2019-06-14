@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loguito"
+    tools:context="com.example.administrador.ipsapp.Login">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp">
+
+        <ImageView
+            android:id="@+id/imgView_emailIcon"
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:src="@drawable/dni2"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="211dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/imgView_emailIcon"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="-3dp"
+            android:layout_toRightOf="@+id/imgView_emailIcon"
+            android:background="@color/editTextBG"
+            android:hint="DNI"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="270dp">
+
+        <ImageView
+            android:id="@+id/imgView_pass"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:src="@drawable/ic_key"
+            android:tint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgView_pass"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-1dp"
+            android:layout_toRightOf="@+id/imgView_pass"
+            android:background="@color/editTextBG"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/butLogin"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="106dp"
+        android:background="@drawable/btn_bg2"
+        android:ems="10"
+        android:text="Ingresar"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxProfe"
+        android:layout_centerHorizontal="true"
+        android:checked="false"
+        android:text="Soy Alumno"
+        android:textColor="#009900" />
+
+    <CheckBox
+        android:id="@+id/checkBoxProfe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="171dp"
+        android:checked="false"
+        android:text="Soy Profesor"
+        android:textColor="#009900" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registrar"
+        android:text="Registrar"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

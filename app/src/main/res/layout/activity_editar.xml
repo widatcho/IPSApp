@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrador.ipsapp.Editar">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#aad66d6d"
+        android:text="Editar"
+        android:textSize="35dp"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/button" />
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textview_design"
+        android:paddingBottom="10dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:paddingLeft="15dp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/etApellido"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textview_design"
+        android:paddingBottom="10dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:paddingLeft="15dp"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/etnombre"
+        android:layout_alignStart="@+id/etnombre"
+        android:layout_marginTop="12dp" />
+    <EditText
+        android:id="@+id/etDni"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textview_design"
+        android:paddingBottom="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="DNI"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail"
+        android:layout_marginTop="12dp" />
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/textview_design"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/etApellido"
+        android:layout_alignStart="@+id/etApellido"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/textview_design"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2"
+        android:layout_marginTop="25dp" />
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/textview_design"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Update"
+        android:background="@drawable/textview_design"
+        android:layout_marginBottom="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/etDni"
+        android:layout_alignStart="@+id/etDni"
+        android:layout_marginTop="13dp"
+        android:layout_alignEnd="@+id/etDni" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner" />
+
+
+</RelativeLayout>

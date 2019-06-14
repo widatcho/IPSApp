@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="1dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="1dp"
+    tools:context="com.example.administrador.ipsapp.Registrar">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/TopIma"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:padding="10dp"
+                android:src="@drawable/img_register"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="solor Rellene los campos de materias"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout1">
+
+        <RelativeLayout
+            android:id="@+id/relativeContenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1">
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/imgView_userIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:padding="10dp"
+                    android:text="Nombre y Apelllido"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/etNoombreAlumno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_userIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgView_userIcon"
+                    android:background="@color/editTextBG"
+                    android:hint="Nombre "
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/imgView_userIcon"
+                    android:layout_width="137dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:padding="8dp"
+                    android:textSize="12dp"
+                    android:text="Documento"
+                     />
+
+                <EditText
+                    android:id="@+id/etNoombreAlumno"
+                    android:layout_width="262dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_userIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-21dp"
+                    android:layout_toRightOf="@+id/imgView_userIcon"
+                    android:background="@color/editTextBG"
+                    android:hint="Nombre "
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/imgView_userIcon"
+                    android:layout_width="119dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:padding="8dp"
+                    android:text="Documento"
+                    android:textSize="12dp"
+                    android:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/etDocumento"
+                    android:layout_width="259dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_userIcon"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_toRightOf="@+id/imgView_userIcon"
+                    android:background="@color/editTextBG"
+                    android:enabled="false"
+                    android:hint="Nombre "
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/imgView_userIcon"
+                    android:layout_width="119dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:padding="8dp"
+
+                    android:text="Carrera"
+                    android:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/etCarrera"
+                    android:layout_width="258dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_userIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_toRightOf="@+id/imgView_userIcon"
+                    android:background="@color/editTextBG"
+                    android:enabled="false"
+                    android:hint="Nombre "
+                    android:inputType="text"
+                    android:maxLines="10"
+                    android:textSize="13dp"
+                    android:paddingLeft="2dp"
+                   />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@+id/relativeLayout3"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/imgView_userIcon"
+                    android:layout_width="119dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:padding="8dp"
+                    android:text="Fecha"
+                    android:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/etFecha"
+                    android:layout_width="259dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_userIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_toRightOf="@+id/imgView_userIcon"
+                    android:background="@color/editTextBG"
+                    android:enabled="false"
+                    android:hint="Nombre "
+                    android:inputType="text"
+                    android:paddingLeft="2dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="207dp"
+                android:background="#551B72" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/imgView_userIcon"
+                    android:layout_width="126dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:padding="8dp"
+                    android:text="Quatrimestres"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/etNoombreAlumno"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_userIcon"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/imgView_userIcon"
+
+                    android:enabled="false"
+
+                    android:hint="Materias "
+                    android:inputType="text"
+                    android:paddingLeft="50dp"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@+id/relativeLayout5"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+
+                <Spinner
+                    android:id="@+id/spinnerQ1"
+                    android:layout_width="77dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="38dp"
+                    android:padding="8dp"
+
+                    android:tint="@color/white" />
+
+                <Spinner
+                    android:id="@+id/etNoombreAlumno"
+                    android:layout_width="207dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentTop="true"
+
+                    android:enabled="false"
+                    android:hint="Materias "
+                    android:inputType="text"
+                    android:paddingLeft="80dp"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:text="M1" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@+id/relativeLayout6"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+
+                <Spinner
+                    android:id="@+id/spinnerQ2"
+                    android:layout_width="77dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="38dp"
+                    android:padding="8dp"
+
+                    android:tint="@color/white" />
+
+                <Spinner
+                    android:id="@+id/etNoombreAlumno"
+                    android:layout_width="207dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentTop="true"
+
+                    android:enabled="false"
+                    android:hint="Materias "
+                    android:inputType="text"
+                    android:paddingLeft="80dp"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:text="M2" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@+id/relativeLayout7"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+
+                <Spinner
+                    android:id="@+id/spinnerQ3"
+                    android:layout_width="77dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="38dp"
+                    android:padding="8dp"
+
+                    android:tint="@color/white" />
+
+                <Spinner
+                    android:id="@+id/etNoombreAlumno"
+                    android:layout_width="207dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentTop="true"
+
+                    android:enabled="false"
+                    android:hint="Materias "
+                    android:inputType="text"
+                    android:paddingLeft="80dp"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:text="M3" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@+id/relativeLayout8"
+                android:layout_marginTop="55dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+
+                <Button
+                    android:id="@+id/bt_delete"
+                    android:layout_width="101dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/btn_bg2"
+                    android:ems="10"
+                    android:text="ANOTAR"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>
+
+</RelativeLayout>
